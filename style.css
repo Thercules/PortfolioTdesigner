@@ -19,8 +19,51 @@ html{
   scroll-behavior: smooth;
 }
 
+.loader_bg {
+  position: fixed; 
+  z-index: 999999;
+  background: rgba(7, 7, 7, 0.747);
+  width: 100%; 
+  height: 100%; 
+}
+.loader {
+  border: 0 soild transparent; 
+  border-radius: 50%; 
+  width: 150px; 
+  height: 150px; 
+  position: absolute; 
+  top: 100px;
+  left: 600px;
+}
+.loader:before, .loader:after {
+  content: '';
+  border: 1em solid #ff003cda; 
+  border-radius: 50%; 
+  width: inherit;
+  height: inherit; 
+  position:absolute; 
+  top: 0;
+  left: 0; 
+  animation: loader 2s linear infinite; 
+  opacity: 0; 
+}
+.loader:before {
+  animation-delay: .5s; 
+}
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  } 50% {
+    opacity: 1; 
+
+  } 100% {
+    transform: scale(1); 
+    opacity: 0;
+  }
+}
+
 .hamburguer {
-  /* background-color: orange gradient; */
   width: 2rem;
   height: 2rem;
   position: fixed;
@@ -126,7 +169,7 @@ header {
 
 .banner h1 {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--font-primary);
   font-weight: 200;
   text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
@@ -409,6 +452,143 @@ header {
   bottom: 2rem;
   opacity: 1;
   visibility: visible;
+} /*A partir daqui, cartão 2*/ 
+.card2 {
+  width: 18rem;
+  height: 25rem;
+  position: relative;
+}
+
+.card2-img-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  border-radius: 0.5rem;
+}
+
+.card2-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.card2:hover .card-img-wrapper img {
+  opacity: 0.5;
+}
+
+.card2-info {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding: 2rem;
+  text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+}
+
+.card2-info h2 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 500;
+  color: #eee;
+}
+
+.card2-info h3 {
+  font-family: var(--font-action);
+  font-weight: bolder;
+  color: #ff4081;
+  margin-bottom: 1.5rem;
+}
+
+.card2-info p {
+  font-family: var(--font-secundary);
+  color: #eee;
+  font-weight: 400;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.card2-info button {
+  width: 8rem;
+  height: 2.5rem;
+}
+
+.card2:hover .card-info {
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
+} /*A partir daqui, cartão 3*/ 
+
+.card3 {
+  width: 18rem;
+  height: 25rem;
+  position: relative;
+}
+
+.card3-img-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  border-radius: 0.5rem;
+}
+
+.card3-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.card3:hover .card-img-wrapper img {
+  opacity: 0.5;
+}
+
+.card3-info {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding: 2rem;
+  text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+}
+
+.card3-info h2 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 500;
+  color: #eee;
+}
+
+.card3-info h3 {
+  font-family: var(--font-action);
+  font-weight: bolder;
+  color: #ff4081;
+  margin-bottom: 1.5rem;
+}
+
+.card3-info p {
+  font-family: var(--font-secundary);
+  color: #eee;
+  font-weight: 400;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.card3-info button {
+  width: 8rem;
+  height: 2.5rem;
+}
+
+.card3:hover .card-info {
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
 }
 
 .sessao-contato {
@@ -525,7 +705,7 @@ header {
 
 .orcamento-wrapper{
   width: 60%;
-  height: 80%;
+  height: 70%;
   background-color: #ffffff99;
   border-radius: 10px;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
