@@ -123,4 +123,5 @@ Portfolio concept - TDesigner
 </a>
 <h3><em><b> 🔶 About BootCamps: 🚀</em><b></h3> 
 <p> --> Bootcamp developer mobile | IGTI | in progress... </p>
+  <p> Flutter, React Native, React JS.</p> 
   
