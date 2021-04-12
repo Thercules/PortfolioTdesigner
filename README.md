@@ -3,7 +3,6 @@ Portfolio concept - TDesigner
 <p>O interesse principal deste projeto, é a criação do meu portfólio pessoal para apresentação de alguns projetos de design e programação. Este site foi construído utilizando as linguagens: HTML5, CSS3, JavaScript e aplicações de criação de imagem como photoshop e illustrator. </p>
 </br> 
 
-<p> <b>Application Content</b> <br>
 • Link to application: <br>
     ↳ https://portfolio-tdesigner.vercel.app/ <br>
   
